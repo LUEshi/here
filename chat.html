@@ -3,7 +3,8 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" language="javascript"></script>
     <script src="./js/cloudmine.js" language="javascript"></script>
-    <script language="javascript">
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+	<script language="javascript">
       $(document).ready(function() {
           var appid = "ae44751608f0431989b26a5943500596";
           var apikey = "d5f3bfe83d7041889bd1b072bdba101e";
@@ -57,7 +58,51 @@
     </script>
   </head>
   <body>
-    <textarea id="chat" cols="60" rows="20"></textarea>
-    <p>Name: <input type="text" id="name" /> Message: <input type="text" id="message" /></p>
+	<div class="topbar" data-scrollspy="scrollspy">
+		<div class="fill">
+			<div class="container">
+				<a class="brand" href="#">here</a>
+			    <form action="" class="pull-right">
+					<input class="input-small" type="text" placeholder="Username">
+					<input class="input-small" type="password" placeholder="Password">
+					<button class="btn" type="submit">Sign in</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="row"> </div>
+		<div class="row">
+			<div class="span5 offset11" style="margin-top:100px;">
+				<form>
+					<fieldset>
+						<legend>new user?</legend>
+						<div class="input" style="margin-bottom:10px">
+							<input type="radio" checked name="studentRadio" value="student">student</input>
+							<input style="margin-left:30px" type="radio" checked name="studentRadio" value="teacher">teacher</input>
+						</div>
+						<div class="clearfix">
+							<div class="input">
+							  <input class="xlarge" type="text" placeholder="name" id="name"></input>
+							</div>
+						</div>
+						<div class="clearfix">
+							<div class="input">
+							  <input class="xlarge" type="email" placeholder="school email" id="email"></input>
+							</div>
+						</div>
+						<div class="clearfix">
+							<div class="input">
+							  <input class="xlarge" type="password" placeholder="password" id="password"></input>
+							</div>
+						</div>
+						<div class="clearfix">
+							<input type="submit" class="btn large primary" value="Sign up!" style="margin-left:221px"></input>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
   </body>
 </html>
